@@ -83,6 +83,8 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+vert botright term
+
 " Use a line cursor within insert mode and a block cursor everywhere else.
 
 " Reference chart of values:
@@ -102,6 +104,9 @@ inoremap [ []<Esc>ha
 inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
+
+noremap <Up> 10k
+noremap <Down> 10j
 
 let g:polyglot_disabled = ['markdown']
 
