@@ -83,6 +83,7 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+"add split screen with the terminal
 vert botright term
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
