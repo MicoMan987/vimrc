@@ -12,7 +12,9 @@ To make the changes that I did just change go to if you have [vim-plug](https://
 ~/.vim/plugged/vimrc/colors/default.vim
 ```
 and put this values
-![image](https://user-images.githubusercontent.com/60105436/224037679-cd3fae4c-7615-402d-8079-407453b3b7cb.png)
+
+![imagem](https://user-images.githubusercontent.com/60105436/224294209-e591a19d-b66d-437b-b129-9e69c324e4a6.png)
+
 
 ## Plugins
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot/blob/master/README.md)
