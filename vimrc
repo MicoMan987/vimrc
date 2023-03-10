@@ -28,9 +28,6 @@ set expandtab
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 
-" Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
-
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
@@ -83,7 +80,6 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-"add split screen with the terminal
 vert botright term
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
@@ -106,8 +102,12 @@ inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
 
+"Key remaps
 noremap <Up> 10k
 noremap <Down> 10j
+
+map <Right> <C-w>>
+map <Left> <C-w><
 
 let g:polyglot_disabled = ['markdown']
 
@@ -116,5 +116,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
 Plug 'sheerun/vimrc'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
