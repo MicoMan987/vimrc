@@ -7,6 +7,9 @@ filetype plugin on
 " Load an indent file for the detected file type.
 filetype indent on
 
+"set background color
+set background=dark
+
 " Turn syntax highlighting on.
 syntax on
 
@@ -33,8 +36,7 @@ autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#303000 ctermbg=234
 
-"set background color
-set background=dark
+
 
 " Do not save backup files.
 set nobackup
@@ -111,11 +113,16 @@ map <Left> <C-w><
 
 let g:polyglot_disabled = ['markdown']
 
+"Color scheme
+colorscheme molokai
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
 Plug 'sheerun/vimrc'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'sainnhe/sonokai'
+Plug 'tomasr/molokai' 
 
 call plug#end()
