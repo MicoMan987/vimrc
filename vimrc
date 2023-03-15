@@ -116,6 +116,9 @@ let g:polyglot_disabled = ['markdown']
 "Color scheme
 colorscheme molokai
 
+" To make YCM work well with c++ scripts
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
