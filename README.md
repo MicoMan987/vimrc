@@ -20,5 +20,5 @@ and put this values
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot/blob/master/README.md)
 - [vimrc](https://github.com/sheerun/vimrc)
 - [sonokai](https://github.com/sainnhe/sonokai)
-- [monokai](https://github.com/tomasr/molokai)
+- [molokai](https://github.com/tomasr/molokai)
 - [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
