@@ -22,21 +22,23 @@ set relativenumber
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
-" Set tab width to 4 columns.
-set tabstop=4
+" Set tab width to 5 columns.
+set tabstop=5
 
 " Use space characters instead of tabs.
 set expandtab
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
+" Highligh cursor column
+set cursorcolumn
+
+set colorcolumn=80
 
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#303000 ctermbg=234
-
-
 
 " Do not save backup files.
 set nobackup
@@ -82,8 +84,6 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-vert botright term
-
 " Use a line cursor within insert mode and a block cursor everywhere else.
 
 " Reference chart of values:
@@ -119,13 +119,14 @@ colorscheme molokai
 " To make YCM work well with c++ scripts
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
+"Show directory tree
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
-Plug 'sheerun/vimrc'
+Plug 'admk/vim-best-colors'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'sainnhe/sonokai'
 Plug 'tomasr/molokai' 
 
 call plug#end()
