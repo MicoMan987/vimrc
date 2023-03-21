@@ -28,6 +28,9 @@ set tabstop=5
 " Use space characters instead of tabs.
 set expandtab
 
+" Use space characters instead of tabs.
+set expandtab
+
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 " Highligh cursor column
@@ -114,10 +117,14 @@ map <Left> <C-w><
 let g:polyglot_disabled = ['markdown']
 
 "Color scheme
-colorscheme molokai
+colorscheme badwolf
+
+"add a red colorcolumn
+hi ColorColumn ctermbg=052
 
 " To make YCM work well with c++ scripts
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "Show directory tree
 
